@@ -1,0 +1,96 @@
+{
+    "name": "KYLER",
+    "profession": "softwere Engineer",
+    "age": 25,
+    "residence": "   S.Korea",
+    "Freelance": "  Aviable",
+    "adress": "  S.Kores, Jeonju",
+    "languages": [
+        {
+            "name": "Uzbek",
+            "level": " 100%"
+        },
+        {
+            "name": "English",
+            "level": "80%"
+        },
+        {
+            "name": "Korean",
+            "level": "90%"
+        }
+    ],
+    "skills": [
+        "HTML",
+        "css",
+        "Js",
+        "nodeJS",
+        "Python"
+    ],
+    "extra_skills": [
+        "Bootstrab",
+        "Materialize",
+        "Styling",
+        "Sass",
+        "Django",
+        "Flask",
+        "GIT knowladge"
+    ],
+    "work_plase": " in IT Company",
+    "service_deck": "mm",
+    "about_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    "about_mee": " Et, volutpat feugiat placerat lobortis. Natoque rutrum ",
+    "about_meee": "semper sed suspendisse nunc lectus",
+    "city": "Denau",
+    "title": [
+        "Flower",
+        "Seedlings",
+        "Gardner",
+        "old",
+        "New"
+    ],
+    "flower_desc": [
+        "What is a Flower?",
+        "WHat is a Seedling?",
+        "Who is Gardner?"
+    ],
+    "flower_name": [
+        "Tulip",
+        "Deffodil",
+        "Poppy",
+        "Sunflower",
+        "bluebell",
+        "Rose",
+        "Snowdrop",
+        "Cherry",
+        "blossom"
+    ],
+    "flower_price": [
+        "15$",
+        "25$",
+        "12$",
+        "20$",
+        "35$",
+        "30$",
+        "22$",
+        "19$",
+        "9$"
+    ],
+    "famous_word": [
+        "Word is beatiful with Flowers"
+    ],
+    "famous_name": [
+        "steve Jobs"
+    ],
+    "title1": [
+        "My Services"
+    ],
+    "subtitle": [
+        "Amet Minim Non Desserunt Uilamco Est Sit Aliquaa Dolor"
+    ],
+    "subtitle1": [
+        "Do Aet Sinit. Velit Officia Consequat Duis Enim Velit Mollit"
+    ],
+    "subtitle2": [
+        "Lorem Ipsum"
+    ]
+}

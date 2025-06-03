@@ -1,0 +1,689 @@
+/* chap taraf */
+.frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #e5e5e5;
+}
+
+.frame .main_frame {
+    position: relative;
+    width: 1440px;
+    height: 1312px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+    /* background: #f7f6b9; */
+}
+
+.main_frame .left_frame {
+    position: relative;
+    width: 305px;
+    height: 1315px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_frame .midd_frame {
+    position: relative;
+    width: 970px;
+    height: 1259px;
+    margin-left: 30px;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main_frame .right_frame {
+    position: relative;
+    width: 108px;
+    height: 1315px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_frame .left_1 {
+    position: relative;
+    width: 228px;
+    height: 267px;
+    margin-top: 50px;
+    margin-left: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.main_frame .left_1 .left_1-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 156.16px;
+    height: 142.53px;
+    margin-bottom: 29.53px;
+}
+
+.left_1-2 {
+    position: relative;
+    width: 66.63px;
+    height: 20.9px;
+    margin-bottom: 6.65px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: #2b2b2b;
+}
+
+
+.main_frame .marginer {
+    position: relative;
+    width: 220px;
+    height: 0px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-top: 39px;
+
+    border: 1.5px solid #f0f0f6;
+}
+
+.main_frame .left_2 {
+    position: relative;
+    width: 221px;
+    height: 126px;
+    margin-left: 44px;
+
+}
+
+.main_frame .left_3 {
+    position: relative;
+    width: 220px;
+    height: 153px;
+    margin-top: 25px;
+    margin-left: 45px;
+
+}
+
+/* jhf */
+.section {
+    margin: 20px 0;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.language-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.lang-name {
+    text-align: left;
+}
+
+.lang-score {
+    text-align: right;
+}
+
+
+/* fdg */
+
+.main_frame .left_frame .left_1-3 {
+    position: relative;
+    width: 147.84px;
+    height: 25.65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+
+    text-transform: capitalize;
+    font-feature-settings: "calt" off, "kern" off;
+    color: #767676;
+
+}
+
+.left-icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 238px;
+    margin-top: 19px;
+}
+
+.link_href {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    position: relative;
+    width: 24.99px;
+    height: 22.8px;
+    border-radius: 50%;
+    filter: drop-shadow(0 4px rgba(0, 0, 0, .25));
+    /* background: #ffb400; */
+}
+
+.icon-1 {
+    position: relative;
+    left: 29.17%;
+    right: 27.08%;
+    margin-top: 5.86px;
+}
+
+.main_frame .left_4 {
+    position: relative;
+    width: 220px;
+    height: 252px;
+    margin-top: 25px;
+    margin-left: 45px;
+    /* background-color: aqua; */
+}
+
+
+
+/* chap taraf */
+.info-container {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid #ddd; */
+    padding-bottom: 6px;
+}
+
+.key {
+    color: #444;
+    font-weight: 600;
+}
+
+.value {
+    color: #222;
+    text-align: right;
+}
+
+.value1 {
+    color: rgb(126, 185, 66);
+    text-align: right;
+}
+
+
+
+/* O'rta midd */
+.umumiy {
+    width: 971px;
+    height: 454.32px;
+    top: 11px;
+    left: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.asosiy {
+    width: 970px;
+    height: 653px;
+    /* background-color: aqua; */
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+.middle1-1 {
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+
+}
+
+.umumiy1-2 {
+
+    margin-top: 40px;
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+*/ .title {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.middle {
+    position: relative;
+    width: 500.28px;
+    height: 50.68px;
+    top: 24px;
+    left: 20.6px;
+    color: rgb(43, 43, 43);
+    font-weight: 700;
+    font-size: 48px;
+    font-family: sans-serif;
+    font-style: normal;
+    line-height: 123.6%;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    position: relative;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.middle-1 {
+    position: relative;
+    width: 425.09px;
+    height: 26px;
+    margin-bottom: 6.65px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12.6%;
+    text-transform: capitalize;
+    color: rgb(118, 118, 118);
+}
+
+.midd_top_btn {
+    position: relative;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.btn-1 {
+    width: 154.4px;
+    height: 50.87px;
+    background-color: rgb(255, 180, 0);
+    color: rgb(43, 43, 43);
+    font-size: 18px;
+    font-family: sans-serif;
+    font-style: normal;
+    border-radius: 9px;
+}
+
+.image {
+    position: absolute;
+    display: flex;
+    top: 5.29px;
+    left: 60%;
+    margin-bottom: 0px;
+}
+
+/* .menu_icons {
+    position: relative;
+} */
+
+.icons-1 {
+    position: absolute;
+    top: 25px;
+    left: 37px;
+}
+
+.icons-2 {
+    position: absolute;
+    top: 48px;
+    left: 516px;
+}
+
+.icons-3 {
+    position: absolute;
+    top: 328px;
+    left: 370px;
+}
+
+.icons-4 {
+    position: absolute;
+    top: 424px;
+    left: 911px;
+}
+
+.icons-5 {
+    position: absolute;
+    top: 67px;
+    left: 891px;
+}
+
+.icons-6 {
+    position: absolute;
+    top: 377 px;
+    left: 552px;
+}
+
+.icons-7 {
+    position: absolute;
+    top: 418px;
+    left: 81px;
+}
+
+/* .right_ top qismi */
+.right_frame {
+    width: 108px;
+    height: 1315px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.yuqori {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 50px;
+}
+
+.markaz {
+    width: 65px;
+    height: 493px;
+    top: 20%;
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+
+.markaz1 {
+    margin-top: 30px;
+}
+
+/* umumiy 2 */
+
+.umumiy2,
+.umumiy3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.umumiy2-1,
+.umumiy2-2,
+.umumiy2-3 {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 260px;
+    height: 220px;
+    margin-top: 25px;
+    margin-left: 45px;
+    background-color: white;
+    position: relative;
+}
+
+.umumiy3-1,
+.umumiy3-2,
+.umumiy3-3 {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 260px;
+    height: 220px;
+    margin-top: 15px;
+    margin-left: 45px;
+    background-color: white;
+}
+
+.rasm1 {
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+.tittlle {
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    position: absolute;
+    top: 93px;
+    right: 60px;
+
+}
+
+.parag {
+    position: absolute;
+    top: 140px;
+    right: 75px;
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.tittlle1 {
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    position: absolute;
+    top: 93px;
+    right: 75px;
+
+}
+
+.parag1 {
+    position: absolute;
+    top: 140px;
+    right: 25px;
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.tittlle2 {
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    position: absolute;
+    top: 93px;
+    right: 77px;
+
+}
+
+.parag2 {
+    position: absolute;
+    top: 140px;
+    right: 25px;
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.tittlle3 {
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    position: absolute;
+    top: 93px;
+    right: 77px;
+
+}
+
+.parag3 {
+    position: absolute;
+    top: 140px;
+    right: 25px;
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.tittlle4 {
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    position: absolute;
+    top: 3px;
+    right: 77px;
+
+}
+
+.parag4 {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* jhfjgf */
+.language-box {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.lang-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.lang-score {
+    font-size: 16px;
+    color: #f4b400;
+    /* sariq */
+    font-weight: bold;
+}
+
+/* ::-webk */
+.main_frame .left_5 {
+    position: relative;
+    width: 186px;
+    height: 128px;
+    margin-top: 25px;
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.left_5-1 {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    width: 221px;
+    height: 20px;
+}
+
+.uzb {
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="main_frame">
+            <!-- bosh qismi -->
+            <div class="left_frame">
+                <div class="left_1">
+                    <div class="left_1-1">
+                        <img src="images/profile.png" width="156px" height="142px" style="border-radius: 50%;" alt="">
+                    </div>
+                    <div class="left_1-2">
+                        <%=user.name%>
+                    </div>
+                    <div class="left_1-3">
+                        <%=user.profession%>
+                    </div>
+                    <div class="left-icons">
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Facebook.svg" class="icon-1">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Instagram.svg" class="icon-1">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Twitter.svg" class="icon-1">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Linkeding.svg" class="icon-1">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Youtube.svg" class="icon-1">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/Dribbble.svg" class="icon-1">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_2">
+                    <div class="info-container">
+                        <div class="info-item">
+                            <div class="key">age</div>
+                            <div class="value">
+                                <%= user.age %>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="key">residence</div>
+                            <div class="value">
+                                <%= user.residence %>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="key">Freelance</div>
+                            <div class="value1">
+                                <%= user.Freelance %>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="key">adress</div>
+                            <div class="value">
+                                <%= user.adress %>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="marginer"></div>
+                <div class="left_3">
+                    <div class="section">
+                        <h3 class="section-title">Languages</h3>
+                        <% user.languages.forEach(lang=> { %>
+                            <div class="language-row">
+                                <span class="lang-name">
+                                    <%= lang.name %>
+                                </span>
+                                <span class="lang-score">
+                                    <%= lang.level %>
+                                </span>
+
+                            </div>
+                            <% }) %>
+                    </div>
+
+
+                </div>
+                <div class="marginer"></div>
+                <div class="left_4">
+                    <div class="language-box">
+                        <div class="language-item">
+                            <span class="lang-name">HTML</span>
+                            <span class="lang-score">90%</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">CSS</span>
+                            <span class="lang-score">85%</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">JS</span>
+                            <span class="lang-score">80%</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">Python</span>
+                            <span class="lang-score">75%</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">WordPress</span>
+                            <span class="lang-score">70%</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="marginer"></div>
+                <div class="left_5">
+                    <span class="til">Extra Skills</span>
+
+                    <div class="left_5-1">
+                        <img src="p1.png" alt="">
+                        <span class="uzb">Bootstrap, Materialize</span>
+                    </div>
+                    <div class="left_5-1">
+                        <img src="p1.png" alt="">
+                        <span class="uzb">Stylus, Sass, Less</span>
+                    </div>
+                    <div class="left_5-1">
+                        <img src="p1.png" alt="">
+                        <span class="uzb">Gulp, Webpack, Grunt</span>
+                    </div>
+                    <div class="left_5-1">
+                        <img src="p1.png" alt="">
+                        <span class="uzb">GIT Knowledge</span>
+                    </div>
+                </div>
+
+                <div class="marginer"></div>
+            </div>
+
+
+
+            <!-- midd qism -->
+
+
+            <div class="midd_frame">
+                <div class="umumiy">
+                    <div class="midd_frame1">
+                        <div class="title">
+                            <div class="middle">
+                                <%=user.profession%>
+                            </div>
+                            <div class="middle">
+                                <%=user.work_plase%>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="midd_top">
+                        <div class="subtitle">
+                            <div class="middle-1">
+                                <%=user.about_me%>
+                            </div>
+                            <div class="middle-1">
+                                <%=user.about_mee%>
+                            </div>
+                            <div class="middle-1">
+                                <%=user.about_meee%>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="midd_top_btn">
+                        <button type="button" class="btn-1">HIRE ME -> </button>
+                    </div>
+                    <div class="image">
+                        <img id="img" src="box_images/rightimg.png" width="305px" height="445px" alt="">
+                    </div>
+                    <div class="menu_icons">
+                        <img src="menu_icon/1.svg" class="icons-1">
+                        <img src="menu_icon/2.svg" class="icons-2">
+                        <img src="menu_icon/3.svg" class="icons-3">
+                        <img src="menu_icon/4.svg" class="icons-4">
+                        <img src="menu_icon/5.png" class="icons-5">
+                        <img src="menu_icon/1.svg" class="icons-6">
+                        <img src="menu_icon/2.svg" class="icons-7">
+                    </div>
+                </div>
+
+                <!-- umumiy1 -->
+
+
+                <div class="asosiy">
+                    <div class="umumiy1">
+                        <div class="umumiy1-1">
+                            <div class="middle1-1">
+                                <%=user.title1%>
+                            </div>
+                        </div>
+                        <div class="umumiy1-2">
+                            <div class="middle1-2">
+                                <%=user.subtitle%>
+                            </div>
+                            <div class="middle1-3">
+                                <%=user.subtitle1%>
+                            </div>
+                            <div class="middle1-4">
+                                <%=user.subtitle2%>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- umumiy2 -->
+
+                    <div class="umumiy2">
+                        <div class="umumiy2-1">
+                            <div class="rasm1">
+                                <img src="menu_icon/m1.svg">
+                            </div>
+                            <div class="teks">
+                                <h4 class="tittlle">Web Devolopment</h4>
+                            </div>
+                            <div class="paragrif">
+                                <p class="parag">Blog, E-commerce</p>
+                            </div>
+                        </div>
+                        <div class="umumiy2-2">
+                            <div class="rasm1">
+                                <img src="menu_icon/m2.svg">
+                            </div>
+                            <div class="teks">
+                                <h4 class="tittlle1">UI/UX Design</h4>
+                            </div>
+                            <div class="paragrif">
+                                <p class="parag1">Mobile App, Wepsite Design</p>
+                            </div>
+                        </div>
+                        <div class="umumiy2-3">
+                            <div class="rasm1">
+                                <img src="menu_icon/m3.svg">
+                            </div>
+                            <div class="teks">
+                                <h4 class="tittlle2">sound design</h4>
+                            </div>
+                            <div class="paragrif">
+                                <p class="parag2">Voice over , Breat Making</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="umumiy3">
+                        <div class="umumiy3-1">
+                            <div class="rasm1">
+                                <img src="menu_icon/m4.svg">
+                            </div>
+                            <div class="teks">
+                                <h4 class="tittlle3">Game Design </h4>
+                            </div>
+                            <div class="paragrif">
+                                <p class="parag3">Character Design,Props design</p>
+                            </div>
+                        </div>
+                        <div class="umumiy3-2">
+                            <div class="rasm1">
+                                <img src="menu_icon/m5.svg">
+                            </div>
+                            <div class="teks">
+                                <h4 class="tittlle3">Photography</h4>
+                            </div>
+                            <div class="paragrif">
+                                <p class="parag3">Portrait,Product Photography</p>
+                            </div>
+                        </div>
+                        <div class="umumiy3-3">
+
+                            <div class="teks">
+                                <h4 class="tittlle4">Advertising</h4>
+                            </div>
+                            <div class="paragrif">
+                                <p class="parag4">Lorem ipsum dolor sit amet<br>, consectetur adipiscing
+                                    elit.Vitea<br>olutpat feugiat placerat lobortis ></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ight_ top qismi   -->
+            <div class="right_frame">
+                <div class="yuqori"><img src="right_img/0.png"></div>
+                <div class="markaz">
+                    <div class="markaz1"><img src="right_img/1.png"></div>
+                    <div class="markaz1"><img src="right_img/2.png"></div>
+                    <div class="markaz1"><img src="right_img/3.png"></div>
+                    <div class="markaz1"><img src="right_img/4.png"></div>
+                    <div class="markaz1"><img src="right_img/5.png"></div>
+                    <div class="markaz1"><img src="right_img/6.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
