@@ -1,15 +1,15 @@
 // A task
 
-const countLetter = function (a, b) {
-    let count = 0
-    for (let i = 0; i < b.length; i++) {
-        if (b[i] === a) {
-            count++
-        }
-    } return count
-}
+// const countLetter = function (a, b) {
+//     let count = 0
+//     for (let i = 0; i < b.length; i++) {
+//         if (b[i] === a) {
+//             count++
+//         }
+//     } return count
+// }
 
-console.log(countLetter('a', "assalomualekum"));
+// console.log(countLetter('a', "assalomualekum"));
 
 
 
@@ -28,7 +28,7 @@ console.log(countLetter('a', "assalomualekum"));
 //     "yowlaga investitsiya qoling",//50-60
 //     "endi dam oling,foydasi yo" //60~
 // ];
-//calbak
+// //calbak qismi
 // function maslahatBering(a, callback) {
 //     if (typeof a !== "number") callback("raqam kiriting", null);
 //     else if (a <= 20) callback(null, list[0])
@@ -61,7 +61,7 @@ console.log(countLetter('a', "assalomualekum"));
 //     "yowlaga investitsiya qoling",//50-60
 //     "endi dam oling,foydasi yo" //60~
 // ];
-//    ASYNC function
+// //ASYNC function qismi
 // async function maslahatBering(a) {
 //     if (typeof a !== "number") throw new Error("raqam kiriting");
 //     else if (a <= 20) return list[0]
@@ -77,22 +77,21 @@ console.log(countLetter('a', "assalomualekum"));
 
 //     }
 // }
-// call via then /catch
-// // console.log("pass 0");
+// //call via then /catch
+// console.log("pass 0");
 
-// // maslahatBering(75)
-// //     .then((data) => {
-// //         console.log("javob:", data);
-// //     })
-// //     .catch((err) => {
-// //         console.log("error:", err);
+// maslahatBering(75)
+//     .then((data) => {
+//         console.log("javob:", data);
+//     })
+//     .catch((err) => {
+//         console.log("error:", err);
 
-// //     })
-// // console.log('pass 1');
+//     })
+// console.log('pass 1');
 
 
-
-// // call via asyn /await
+// call via asyn /await
 // async function run() {
 //     let javob = await maslahatBering(20)
 //     console.log(javob);
@@ -143,34 +142,34 @@ console.log(countLetter('a', "assalomualekum"));
 // run()
 
 //--------------------------------------------------------------------------------------------------------------------------------
-// console.log("jak ma maslahati");
-// const list = [
-//     "yaxwi talaba boling",//odan 20
-//     "togri bowliq tanlab va kopro hato qiling", //20-20
-//     "uzizni iwlarizni boshlang",//30-40
-//     "uziz kucli bolgan sohada iwlani qiling",//40-50
-//     "yowlaga investitsiya qoling",//50-60
-//     "endi dam oling,foydasi yo" //60~
-// ];
-// //callback
-// function maslahatBering(a, callback) {
-//     if (typeof a !== "number") callback("raqam kiriting", null);
-//     else if (a <= 20) callback(null, list[0])
-//     else if (a > 20 && a <= 30) callback(null, list[1])
-//     else if (a > 30 && a <= 40) callback(null, list[2])
-//     else if (a > 40 && a <= 50) callback(null, list[3])
-//     else if (a > 50 && a <= 60) callback(null, list[4])
-//     else {
-//         setInterval(function () {
-//             callback(null, list[5]);
-//         }, 5000);
+console.log("jak ma maslahati");
+const list = [
+    "yaxwi talaba boling",//odan 20
+    "togri bowliq tanlab va kopro hato qiling", //20-20
+    "uzizni iwlarizni boshlang",//30-40
+    "uziz kucli bolgan sohada iwlani qiling",//40-50
+    "yowlaga investitsiya qoling",//50-60
+    "endi dam oling,foydasi yo" //60~
+];
+//callback
+function maslahatBering(a, callback) {
+    if (typeof a !== "number") callback("raqam kiriting", null);
+    else if (a <= 20) callback(null, list[0])
+    else if (a > 20 && a <= 30) callback(null, list[1])
+    else if (a > 30 && a <= 40) callback(null, list[2])
+    else if (a > 40 && a <= 50) callback(null, list[3])
+    else if (a > 50 && a <= 60) callback(null, list[4])
+    else {
+        setInterval(function () {
+            callback(null, list[5]);
+        }, 5000);
 
-//     }
-// }
-// console.log("pass 0");
+    }
+}
+console.log("pass 0");
 
-// maslahatBering(75, (err, data) => {
-//     if (err) console.log("error:", err);
-//     console.log("javob:", data);
-// });
-// console.log('pass 1');
+maslahatBering(75, (err, data) => {
+    if (err) console.log("error:", err);
+    console.log("javob:", data);
+});
+console.log('pass 1');
