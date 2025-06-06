@@ -1,3 +1,15 @@
+
+//B Task
+
+function countDigits(a) {
+
+    const list = a.split('').filter(el => el >= "0" && el <= "9")
+    return list.length
+};
+console.log(countDigits("3fvgb2grvr5dgfj2dn69"));
+
+
+
 // A task
 
 // const countLetter = function (a, b) {
@@ -79,7 +91,7 @@
 
 //     }
 // }
-//call via then /catch
+// //call via then /catch
 // console.log("pass 0");
 
 // maslahatBering(78)
@@ -93,7 +105,7 @@
 // console.log('pass 1');
 
 
-// call via asyn /await
+// //call via asyn / await
 // async function run() {
 //     let javob = await maslahatBering(20)
 //     console.log(javob);
@@ -194,21 +206,21 @@
 // });
 // console.log('pass 1');
 
-console.log("===== EXECUTE =====");
+// console.log("===== EXECUTE =====");
 
-// DEFINE
-function qoldiqliBolish(a, b, callback) {
-    if (b === 0) {
-        callback("Mahraj nolga teng bololmaydi", null);
-    } else {
-        callback(null, a % b);
-    }
-}
+// // DEFINE
+// function qoldiqliBolish(a, b, callback) {
+//     if (b === 0) {
+//         callback("Mahraj nolga teng bololmaydi", null);
+//     } else {
+//         callback(null, a % b);
+//     }
+// }
 
-// CALL
-qoldiqliBolish(10, 3, (err, data) => {
-    if (err) console.log("Error:", err);
-    else {
-        console.log("data:", data);
-    }
-});
+// // CALL
+// qoldiqliBolish(10, 3, (err, data) => {
+//     if (err) console.log("Error:", err);
+//     else {
+//         console.log("data:", data);
+//     }
+// });
