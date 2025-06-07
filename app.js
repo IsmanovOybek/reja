@@ -30,8 +30,18 @@ app.set('view engine', 'ejs');
 
 //4 routing kod
 app.post("/create-item", (req, res) => {
+    console.log("user entered / create-item");
     console.log(req.body);
-    res.json({ test: "success" })
+    const new_reja = req.body.reja;
+    db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
+        if (err) {
+            console.log(err);
+            res.send("hatolik bor")
+
+        } else {
+            res.send("muofaqiyatli amalga owdi")
+        }
+    })
 })
 
 app.get("/author", (req, res) => {
@@ -39,8 +49,19 @@ app.get("/author", (req, res) => {
 })
 
 app.get("/", function (req, res) {
-    res.render(`reja`);
-})
+    console.log("user entered /");
+
+    db.collection("plans")
+        .find()
+        .toArray((err, data) => { // <-- err bu yerda to‘g‘ri ishlatiladi
+            if (err) {
+                console.log("Xatolik:", err);
+                res.send("MongoDB bilan boglanishda xatolik");
+            } else {
+                res.render("reja", { items: data });
+            }
+        });
+});
 
 
 module.exports = app;
