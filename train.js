@@ -1,12 +1,23 @@
+// c task
+function checkground(a, b) {
+    const c = [...a].every(ch => b.includes(ch));
+    return c;
+}
+const g = checkground("salom", "smlao")
+console.log(g)
+
+
+
+
 
 //B Task
 
-function countDigits(a) {
+// function countDigits(a) {
 
-    const list = a.split('').filter(el => el >= "0" && el <= "9")
-    return list.length
-};
-console.log(countDigits("3fvgb2grvr5dgfj2dn69"));
+//     const list = a.split('').filter(el => el >= "0" && el <= "9")
+//     return list.length
+// };
+// console.log(countDigits("3fvgb2grvr5dgfj2dn69"));
 
 
 
