@@ -1,3 +1,71 @@
+//d task
+
+class Shop {
+    constructor(non, lagmon, cola) {
+        this.non = non;
+        this.lagmon = lagmon;
+        this.cola = cola;
+    }
+
+    vaqt() {
+        return new Date().toLocaleTimeString().slice(0, 5);
+    }
+
+    qoldiq() {
+        console.log(`Hozir: ${this.vaqt()} da ${this.non} ta non, ${this.lagmon} ta lagmon, ${this.cola} ta cola mavjud.`);
+    }
+
+    sotish(lagmonSoni, nonSoni, colaSoni) {
+        if (this.lagmon >= lagmonSoni && this.non >= nonSoni && this.cola >= colaSoni) {
+            this.lagmon -= lagmonSoni;
+            this.non -= nonSoni;
+            this.cola -= colaSoni;
+            console.log(`Soat ${this.vaqt()} da ${lagmonSoni} ta lag'mon, ${nonSoni} ta non, ${colaSoni} ta cola sotildi.`);
+        } else {
+            console.log(`Soat ${this.vaqt()} da xatolik: Yetarli mahsulot yo'q!`);
+        }
+    }
+
+    qabul(lagmonSoni, nonSoni, colaSoni) {
+        this.lagmon += lagmonSoni;
+        this.non += nonSoni;
+        this.cola += colaSoni;
+        console.log(`Soat ${this.vaqt()} da ${lagmonSoni} ta lag'mon, ${nonSoni} ta non, ${colaSoni} ta cola qabul qilindi.`);
+    }
+}
+
+const shop = new Shop(4, 5, 2);
+shop.qoldiq();
+shop.sotish(3, 1, 1);
+shop.qabul(7, 9, 4);
+shop.qoldiq();
+shop.sotish(1, 1, 1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // c task
 function checkground(a, b) {
     const c = [...a].every(ch => b.includes(ch));

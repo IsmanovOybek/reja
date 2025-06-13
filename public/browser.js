@@ -58,8 +58,41 @@ document.addEventListener("click", function (e) {
                 });
         }
     }
+
+    //edit oper
     if (e.target.classList.contains("edit-me")) {
-        //edit qism
-        alert("siz edit tugmasini bosdiz")
+        let userinput = prompt(
+            "please make changes",
+            e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+        );
+        if (userinput) {
+            axios
+                .post("/edit-item", {
+                    id: e.target.getAttribute("data-id"),
+                    new_input: userinput,
+                })
+                .then(response => {
+                    console.log(response.data);
+                    e.target.parentElement.parentElement.querySelector(
+                        ".item-text"
+                    ).innerHTML = userinput;
+
+                }).catch(err => {
+                    console.log("please make changes");
+
+                })
+
+        }
     }
+
+})
+
+
+
+//hammasini ucriw
+document.getElementById("clean-all").addEventListener("click", function () {
+    axios.post("/delete-all", { delete_all: true }).then((response) => {
+        alert(response.data.state);
+        document.location.reload();
+    })
 })
