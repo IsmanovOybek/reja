@@ -1,10 +1,31 @@
-// E task
 
-const getReverse = function (e) {
-    return e.split('').reverse().join("")
+// F task
+
+const get = function (e) {
+    const b = e.split("")
+    const c = new Set(b)
+    return c.size < b.length
 
 }
-console.log(getReverse("hello"))
+
+console.log(get("hello"))
+
+
+
+
+
+
+
+
+
+
+// E task
+
+// const getReverse = function (e) {
+//     return e.split('').reverse().join("")
+
+// }
+// console.log(getReverse("hello"))
 
 
 
